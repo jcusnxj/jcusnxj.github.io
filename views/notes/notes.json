@@ -1,0 +1,4 @@
+{
+    "permalink": "/note/{{ page.fileSlug }}/",
+    "templateEngineOverride": "md"
+}
