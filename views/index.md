@@ -2,6 +2,6 @@
 title: Hello world!
 layout: base
 ---
-### Hello world!
+### Hey there!
 
-Welcome.
+Welcome to my personal website.
