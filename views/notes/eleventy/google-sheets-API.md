@@ -92,7 +92,7 @@ export default async function () {
 
 ### .env file
 
-- Follow the instructions in [[dotenv-package]]
+- Follow the instructions in [dotenv-package](/note/dotenv-package)
 - .env file should contain:
 
 `/.env`
@@ -102,6 +102,15 @@ GOOGLE_SHEETS_API_KEY=your-actual-google-sheets-API-key
 GOOGLE_SHEET_ID=actual-google-sheet-id
 ```
 
+### Scripts in package.json
+
+`/package.json`
+
+```js
+"scripts": {
+    "running": "node scripts/google-sheets.js"
+  },
+```
 
 ### Usage
 

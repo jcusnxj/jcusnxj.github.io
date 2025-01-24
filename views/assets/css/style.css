@@ -93,8 +93,52 @@ body {
     text-decoration: none;
 }
 
-h2, h3, p, ul, ol {
+h2, h3, p, ul, ol, .table {
     margin-bottom: 1rem;
+}
+
+/* TABLES */
+.table-overview {
+  width: 95%;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.unit-cell, .data-cell {
+  border-bottom: 1px solid grey;
+}
+
+.data-cell.no-border {
+  border-bottom: none;
+}
+
+.unit-cell {
+  color:grey;
+  font-style: italic;
+}
+
+.total-row {
+  color:black;
+  
+}
+
+/* PAGINATION */
+.pagination {
+  display:flex;
+  justify-content: space-between;
+}
+
+.pagination a {
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) { /* Adjust the max-width for your screen size */
+  .hidden-stuff {
+    display: none; /* Hide the column */
+  }
 }
 
 

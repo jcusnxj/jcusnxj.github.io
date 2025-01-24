@@ -1,0 +1,6 @@
+{
+    "layout": "monthlyreport",
+    "tags": ["log","post","running"],
+    "permalink": "/log/{{ page.fileSlug }}/",
+    "category": "running"
+}

@@ -21,8 +21,8 @@
 
     <body>
         <main>
-            {% block content %}
             <h2 class="page-title">{{ title }}</h2>
+            {% block content %}
             {{ content | safe }}
             {% endblock %}
         </main>

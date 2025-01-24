@@ -1,0 +1,7 @@
+{% extends "views/_layouts/base.njk" %}
+
+{% block content %}
+{{ content | safe }} 
+{% include "partials/daily-overview.njk" %}
+{% include "partials/pagination.njk" %}
+{% endblock %}

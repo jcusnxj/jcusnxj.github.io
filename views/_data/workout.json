@@ -1,0 +1,189 @@
+[
+  {
+    "date": "2024-12-03",
+    "distance": "2.2",
+    "duration": "00:14:53",
+    "pace": "06:50",
+    "avghr": "162",
+    "ascent": "23",
+    "cadence": "161",
+    "garmin": "https://connect.garmin.com/modern/activity/17679873625",
+    "location": "Chod"
+  },
+  {
+    "date": "2024-12-06",
+    "distance": "2.2",
+    "duration": "00:16:39",
+    "pace": "07:36",
+    "avghr": "166",
+    "ascent": "21",
+    "cadence": "156",
+    "garmin": "https://connect.garmin.com/modern/activity/17702378950",
+    "location": "Chod"
+  },
+  {
+    "date": "2024-12-09",
+    "distance": "2.3",
+    "duration": "00:14:58",
+    "pace": "06:39",
+    "avghr": "153",
+    "ascent": "23",
+    "cadence": "160",
+    "garmin": "https://connect.garmin.com/modern/activity/17722636902",
+    "location": "Chod"
+  },
+  {
+    "date": "2024-12-12",
+    "distance": "2.2",
+    "duration": "00:14:53",
+    "pace": "06:52",
+    "avghr": "158",
+    "ascent": "24",
+    "cadence": "160",
+    "garmin": "https://connect.garmin.com/modern/activity/17745393386",
+    "location": "Chod"
+  },
+  {
+    "date": "2024-12-15",
+    "distance": "2.5",
+    "duration": "00:17:04",
+    "pace": "06:56",
+    "avghr": "152",
+    "ascent": "26",
+    "cadence": "162",
+    "garmin": "https://connect.garmin.com/modern/activity/17767235476",
+    "location": "Chod"
+  },
+  {
+    "date": "2024-12-18",
+    "distance": "2.8",
+    "duration": "00:19:11",
+    "pace": "06:56",
+    "avghr": "156",
+    "ascent": "27",
+    "cadence": "161",
+    "garmin": "https://connect.garmin.com/modern/activity/17789105208",
+    "location": "Chod"
+  },
+  {
+    "date": "2024-12-21",
+    "distance": "2.5",
+    "duration": "00:17:11",
+    "pace": "06:49",
+    "avghr": "151",
+    "ascent": "25",
+    "cadence": "161",
+    "garmin": "https://connect.garmin.com/modern/activity/17816980738",
+    "location": "Chod"
+  },
+  {
+    "date": "2024-12-24",
+    "distance": "2.8",
+    "duration": "00:19:45",
+    "pace": "07:06",
+    "avghr": "141",
+    "ascent": "28",
+    "cadence": "159",
+    "garmin": "https://connect.garmin.com/modern/activity/17826016221",
+    "location": "Chod"
+  },
+  {
+    "date": "2024-12-27",
+    "distance": "3.2",
+    "duration": "00:21:11",
+    "pace": "06:38",
+    "avghr": "151",
+    "ascent": "34",
+    "cadence": "161",
+    "garmin": "https://connect.garmin.com/modern/activity/17848718075",
+    "location": "Chod"
+  },
+  {
+    "date": "2025-01-02",
+    "distance": "2.8",
+    "duration": "00:19:09",
+    "pace": "06:53",
+    "avghr": "148",
+    "ascent": "29",
+    "cadence": "160",
+    "garmin": "https://connect.garmin.com/modern/activity/17896840063",
+    "location": "Chod"
+  },
+  {
+    "date": "2025-01-05",
+    "distance": "3.2",
+    "duration": "00:23:09",
+    "pace": "07:17",
+    "avghr": "141",
+    "ascent": "32",
+    "cadence": "159",
+    "garmin": "https://connect.garmin.com/modern/activity/17920190158",
+    "location": "Chod"
+  },
+  {
+    "date": "2025-01-08",
+    "distance": "3.3",
+    "duration": "00:23:00",
+    "pace": "06:53",
+    "avghr": "142",
+    "ascent": "30",
+    "cadence": "160",
+    "garmin": "https://connect.garmin.com/modern/activity/17949781878",
+    "location": "Chod"
+  },
+  {
+    "date": "2025-01-11",
+    "distance": "3.6",
+    "duration": "00:25:24",
+    "pace": "06:59",
+    "avghr": "148",
+    "ascent": "25",
+    "cadence": "161",
+    "garmin": "https://connect.garmin.com/modern/activity/17985416924",
+    "location": "Chod"
+  },
+  {
+    "date": "2025-01-14",
+    "distance": "4.3",
+    "duration": "00:30:41",
+    "pace": "07:05",
+    "avghr": "144",
+    "ascent": "40",
+    "cadence": "160",
+    "garmin": "https://connect.garmin.com/modern/activity/18002062667",
+    "location": "Chod"
+  },
+  {
+    "date": "2025-01-17",
+    "distance": "4.4",
+    "duration": "00:29:57",
+    "pace": "06:45",
+    "avghr": "147",
+    "ascent": "32",
+    "cadence": "160",
+    "garmin": "https://connect.garmin.com/modern/activity/18028065434",
+    "location": "Chod"
+  },
+  {
+    "date": "2025-01-20",
+    "distance": "4.3",
+    "duration": "00:30:04",
+    "pace": "06:56",
+    "avghr": "142",
+    "ascent": "34",
+    "cadence": "161",
+    "garmin": "https://connect.garmin.com/modern/activity/18054782959",
+    "location": "Chod"
+  },
+  {
+    "date": "2025-01-23",
+    "distance": "4.6",
+    "duration": "00:29:57",
+    "pace": "06:34",
+    "avghr": "145",
+    "ascent": "32",
+    "cadence": "160",
+    "garmin": "https://connect.garmin.com/modern/activity/18082358444",
+    "location": "Chod"
+  }
+]

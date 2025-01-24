@@ -1,0 +1,24 @@
+[
+  {
+    "month": "Dec 24",
+    "eomonth": "2024-12-31",
+    "distance": "22.5",
+    "duration": "02:35:45",
+    "pace": "06:56",
+    "avghr": "154",
+    "ascent": "231",
+    "cadence": "160",
+    "id": "2412"
+  },
+  {
+    "month": "Jan 25",
+    "eomonth": "2025-01-31",
+    "distance": "30.6",
+    "duration": "03:31:21",
+    "pace": "06:55",
+    "avghr": "145",
+    "ascent": "254",
+    "cadence": "160",
+    "id": "2501"
+  }
+]
