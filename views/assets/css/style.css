@@ -85,6 +85,10 @@ body {
     padding: 0 1rem;
 }
 
+main {
+  min-height: calc(100dvh - 13rem); /* minus footer/header height */
+}
+
 .site-header {
     margin: 2rem 0;
 }
@@ -96,6 +100,24 @@ body {
 h2, h3, p, ul, ol, .table {
     margin-bottom: 1rem;
 }
+
+/* HEADER */
+.site-header {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/*FOOTER */
+.site-footer {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+}
+
 
 /* TABLES */
 .table-overview {
@@ -133,6 +155,23 @@ h2, h3, p, ul, ol, .table {
   font-weight: bolder;
   text-decoration: none;
 }
+
+/* BREADCRUMB */
+.crumb,
+.crumb-last {
+    display: inline;
+    text-decoration: none;
+}
+
+.crumb-last {
+    color: #a8a29e;
+}
+
+.crumb::after {
+    content: " > ";
+    color: #a8a29e;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 600px) { /* Adjust the max-width for your screen size */

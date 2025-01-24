@@ -20,6 +20,10 @@ export default function (eleventyConfig) {
         excerpt_separator: "<!-- excerpt -->",
     });
 
+    //SHORTCODES
+    // get the current year
+    eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`); //import DateTime from luxon
+    
     //FILTERS
     //withinDateRange (for running log - daily)
     eleventyConfig.addFilter("withinDateRange", (dateStr, startDateStr, endDateStr) => {

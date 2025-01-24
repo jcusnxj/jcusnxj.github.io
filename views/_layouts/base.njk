@@ -14,19 +14,24 @@
     <title>{{ title }}</title>
 </head>
 
-<div class="main-container">
-    <header class="site-header">
-        <h1 class="site-title"><a href="/">jcusnxj</a></h1>
-    </header>
+<body>
+    <div class="main-container">
+        <header class="site-header">
+            <h1 class="site-title"><a href="/">jcusnxj</a></h1>
+        </header>
 
-    <body>
+
         <main>
             <h2 class="page-title">{{ title }}</h2>
             {% block content %}
             {{ content | safe }}
             {% endblock %}
         </main>
-    </body>
+
+        <footer class="site-footer">
+            {% include "partials/footer.njk" %}
+        </footer>
+</body>
 
 </div>
 
