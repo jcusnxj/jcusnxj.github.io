@@ -97,7 +97,7 @@ export default async function () {
 
 `/.env`
 
-```
+```txt
 GOOGLE_SHEETS_API_KEY=your-actual-google-sheets-API-key
 GOOGLE_SHEET_ID=actual-google-sheet-id
 ```

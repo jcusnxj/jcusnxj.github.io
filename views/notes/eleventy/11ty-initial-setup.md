@@ -36,7 +36,7 @@ echo '# My Eleventy Project' > index.md
 
 `/.gitignore`
 
-```
+```txt
 dist          
 node_modules
 .DS_Store
@@ -100,7 +100,7 @@ export const config = {
 
 ### Create directories
 
-```
+```txt
 └── views                   // custom override of default folder 
 │    ├── _data              // global data folder
 │    │     └── site.js      

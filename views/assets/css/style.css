@@ -76,7 +76,7 @@ textarea:not([rows]) {
 body {
     min-height: 100vh;
     line-height: 1.5;
-    font-family: 'Roboto Mono', 'Open Sans', 'Bitter', sans-serif;
+    font-family: 'Bitter', 'Open Sans', 'Roboto Mono', sans-serif;
 }
 
 .main-container {
@@ -93,6 +93,8 @@ body {
     text-decoration: none;
 }
 
-h2, h3, p, ul, ol, pre {
+h2, h3, p, ul, ol {
     margin-bottom: 1rem;
 }
+
+

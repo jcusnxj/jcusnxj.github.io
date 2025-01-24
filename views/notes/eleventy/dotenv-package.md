@@ -32,7 +32,7 @@ export default function(eleventyConfig) {
 
 `/.env`
 
-```
+```txt
 GOOGLE_SHEETS_API_KEY=your-actual-google-sheets-API-key 
 ```
 
@@ -40,7 +40,7 @@ GOOGLE_SHEETS_API_KEY=your-actual-google-sheets-API-key
 
 `/.gitignore`
 
-```
+```txt
 dist        
 node_modules
 .DS_Store

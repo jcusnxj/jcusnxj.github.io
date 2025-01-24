@@ -28,7 +28,7 @@ export default function (eleventyConfig) {
 
 ### Folder structure
 
-```
+```txt
 └── views                        
      ├── _data                
      ├── _includes             
