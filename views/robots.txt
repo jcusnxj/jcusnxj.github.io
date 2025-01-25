@@ -1,0 +1,4 @@
+Sitemap: https://jcusnxj.net/sitemap.xml
+
+User-agent: *
+Disallow:

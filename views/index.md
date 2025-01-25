@@ -6,6 +6,12 @@ eleventyNavigation:
 ---
 Welcome to my personal website.
 
+### Running log
+
+- [Overview](/log/)
+- [January 2025](/log/2501)
+- [December 2024](/log/2412)
+
 ### Eleventy notes:
 
 - [11ty Initial Setup](/note/11ty-initial-setup)
@@ -20,9 +26,3 @@ Welcome to my personal website.
 - [Syntax Highlighting](/note/syntax-highlighting)
 - [Tailwind CSS Darkmode Switcher](/note/tailwind-css-darkmode-switcher)
 - [Tailwind CSS](/note/tailwind-css)
-
-### Running log
-
-- [Overview](/log/)
-- [January 2025](/log/2501)
-- [December 2024](/log/2412)

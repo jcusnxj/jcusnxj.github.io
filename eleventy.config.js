@@ -48,6 +48,11 @@ export default function (eleventyConfig) {
         return DateTime.fromJSDate(date).toFormat(format);
       });
 
+    // jsonify filter (to read running data)
+	eleventyConfig.addFilter("jsonify", function(value) {
+		return JSON.stringify(value);
+	  });
+
 };
 
 export const config = {

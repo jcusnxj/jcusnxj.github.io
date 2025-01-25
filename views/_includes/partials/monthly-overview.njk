@@ -1,4 +1,7 @@
-<section class="table">
+<div>
+  <canvas id="myChart" data-chart='{{ monthly | jsonify  }}'></canvas>
+</div>
+
 <table class="table-overview">
   <thead>
     <tr class="header-row">
@@ -28,4 +31,3 @@
     {% endfor %}
   </tbody>
 </table>
-</section>

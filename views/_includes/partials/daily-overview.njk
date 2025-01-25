@@ -1,4 +1,3 @@
-<section class="table">
   <table class="table-overview">
     <thead>
       <tr class="header-row">
@@ -7,7 +6,7 @@
         <th class="hidden-stuff">Duration</th>
         <th>Pace</th>
         <th>Avg HR</th>
-        <th class="hidden-stuff">Location</th>
+        <!-- <th class="hidden-stuff">Location</th> -->
       </tr>
     </thead>
     <tbody>
@@ -17,7 +16,7 @@
         <td class="unit-cell hidden-stuff">hh:mm:ss</td>
         <td class="unit-cell">min/km</td>
         <td class="unit-cell">bpm</td>
-        <td class="unit-cell hidden-stuff">link</td>
+        <!-- <td class="unit-cell hidden-stuff">link</td> -->
       </tr>
       {% set totalItems = 0 %}
       {% for item in workout | reverse %}
@@ -29,7 +28,7 @@
         <td class="data-cell hidden-stuff">{{ item.duration }}</td>
         <td class="data-cell">{{ item.pace }}</td>
         <td class="data-cell">{{ item.avghr }}</td>
-        <td class="data-cell hidden-stuff"><a href="{{ item.garmin }}">{{ item.location }}</a></td>
+        <!-- <td class="data-cell hidden-stuff"><a href="{{ item.garmin }}">{{ item.location }}</a></td> -->
       </tr>
       {% endif %}
       {% endfor %}
@@ -49,9 +48,8 @@
         <td class="hidden-stuff">{{ matchingRecord.duration }}</td>
         <td>{{ matchingRecord.pace }}</td>
         <td>{{ matchingRecord.avghr }}</td>
-        <td class="hidden-stuff">-</td>
+        <!-- <td class="hidden-stuff">-</td> -->
       </tr>
 
     </tbody>
   </table>
-</section>
