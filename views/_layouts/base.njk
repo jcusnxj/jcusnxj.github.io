@@ -25,24 +25,46 @@
 </head>
 
 <body>
-    <div class="main-container">
+
+    <!-- PAGE LAYOUT -->
+    <div class="page">
+
+        <!-- HEADER -->
         <header class="site-header">
             <h1 class="site-title"><a href="/">jcusnxj</a></h1>
         </header>
 
-
-        <main>
-            <h2 class="page-title">{{ title }}</h2>
-            {% block content %}
-            {{ content | safe }}
+        <!-- LEFT SIDEBAR -->
+        <nav class="left-sidebar">
+            {% block leftSidebar %}
             {% endblock %}
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <div class="main-container">
+                <h2 class="page-title">{{ title }}</h2>
+                {% block mainContent %}
+                {{ content | safe }}
+                {% endblock %}
+            </div>
         </main>
 
+        <!-- RIGHT SIDEBAR -->
+        <div class="right-sidebar">
+            {% block rightSidebar %}
+            {% endblock %}
+        </div>
+
+        <!-- FOOTER -->
         <footer class="site-footer">
-            {% include "partials/footer.njk" %}
+            &copy; {% year %} jcusnxj.net
         </footer>
 
-        <script src="/assets/js/barchart.js"></script>
+    </div>
+
+    <script src="/assets/js/barchart.js"></script>
+
 </body>
 
 </div>

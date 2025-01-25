@@ -77,16 +77,11 @@ body {
 .main-container {
     max-width: 768px;
     margin: 0 auto;
-    padding: 0 1rem;
 }
 
 a {
   color:#2563eb;
   text-decoration: none;
-}
-
-main {
-  min-height: calc(100dvh - 12rem); /* minus footer/header height */
 }
 
 .site-title a {
@@ -97,23 +92,56 @@ h2, h3, p, ul, ol, .table, canvas {
     padding-bottom: 1rem;
 }
 
-/* HEADER */
-.site-header {
-  height: 7rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+/* GRID LAYOUT */
+.page {
+  display: grid;
+  grid-template-columns: 300px 1fr 240px;
+  grid-template-rows: auto; 
+  grid-template-areas: 
+  "header header header"
+  "leftSidebar mainContent rightSidebar"
+  "footer footer footer";
 }
 
-/*FOOTER */
+.site-header {
+  grid-area: header;
+  background-color: aqua;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.left-sidebar {
+  grid-area: leftSidebar;
+  background-color: brown;
+  padding: 1rem;
+}
+
+.main-content {
+  grid-area: mainContent;
+  background-color: coral;
+  min-height: calc(100dvh - 8rem);
+  padding: 1rem;
+}
+
+.right-sidebar {
+  grid-area: rightSidebar;
+  background-color: chartreuse;
+  padding: 1rem;
+}
+
 .site-footer {
-  height: 5rem;
+  grid-area: footer;
+  padding: 1rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: lightslategray;
+  background-color: cadetblue;
 }
-
 
 /* TABLES */
 .table-overview {
@@ -168,10 +196,38 @@ h2, h3, p, ul, ol, .table, canvas {
 
 
 /* RESPONSIVE */
-@media (max-width: 600px) { /* Adjust the max-width for your screen size */
-  .hidden-stuff {
-    display: none; /* Hide the column */
+@media (max-width: 1300px) { 
+  .page {
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    grid-template-rows: auto; 
+    grid-template-areas: 
+    "header header"
+    "mainContent rightSidebar"
+    "footer footer";
+  }
+
+  .left-sidebar {
+    padding: 0;
+  }
+  
+}
+
+@media (max-width: 1000px) { 
+  .page {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto; 
+    grid-template-areas: 
+    "header"
+    "mainContent"
+    "rightSidebar"
+    "footer";
   }
 }
 
-
+@media (max-width: 600px) { 
+  .hidden-stuff {
+    display: none; 
+  }
+}
