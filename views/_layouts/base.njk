@@ -37,6 +37,7 @@
         <!-- LEFT SIDEBAR -->
         <nav class="left-sidebar">
             {% block leftSidebar %}
+            {% include "partials/navigation/sidebar-main.njk" %}
             {% endblock %}
         </nav>
 
@@ -49,12 +50,6 @@
                 {% endblock %}
             </div>
         </main>
-
-        <!-- RIGHT SIDEBAR -->
-        <div class="right-sidebar">
-            {% block rightSidebar %}
-            {% endblock %}
-        </div>
 
         <!-- FOOTER -->
         <footer class="site-footer">

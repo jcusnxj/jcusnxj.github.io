@@ -28,6 +28,7 @@ figure, blockquote, dl, dd {
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
+  padding: 0;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -95,17 +96,18 @@ h2, h3, p, ul, ol, .table, canvas {
 /* GRID LAYOUT */
 .page {
   display: grid;
-  grid-template-columns: 300px 1fr 240px;
+  max-width: 968px;
+  margin: 0 auto;
+  grid-template-columns: 200px 1fr;
   grid-template-rows: auto; 
   grid-template-areas: 
-  "header header header"
-  "leftSidebar mainContent rightSidebar"
-  "footer footer footer";
+  "header header"
+  "leftSidebar mainContent"
+  "footer footer";
 }
 
 .site-header {
   grid-area: header;
-  background-color: aqua;
   height: 4rem;
   display: flex;
   align-items: center;
@@ -115,20 +117,12 @@ h2, h3, p, ul, ol, .table, canvas {
 
 .left-sidebar {
   grid-area: leftSidebar;
-  background-color: brown;
   padding: 1rem;
 }
 
 .main-content {
   grid-area: mainContent;
-  background-color: coral;
   min-height: calc(100dvh - 8rem);
-  padding: 1rem;
-}
-
-.right-sidebar {
-  grid-area: rightSidebar;
-  background-color: chartreuse;
   padding: 1rem;
 }
 
@@ -140,7 +134,6 @@ h2, h3, p, ul, ol, .table, canvas {
   align-items: center;
   justify-content: center;
   color: lightslategray;
-  background-color: cadetblue;
 }
 
 /* TABLES */
@@ -196,24 +189,7 @@ h2, h3, p, ul, ol, .table, canvas {
 
 
 /* RESPONSIVE */
-@media (max-width: 1300px) { 
-  .page {
-    display: grid;
-    grid-template-columns: 1fr 240px;
-    grid-template-rows: auto; 
-    grid-template-areas: 
-    "header header"
-    "mainContent rightSidebar"
-    "footer footer";
-  }
-
-  .left-sidebar {
-    padding: 0;
-  }
-  
-}
-
-@media (max-width: 1000px) { 
+@media (max-width: 1068px) { 
   .page {
     display: grid;
     grid-template-columns: 100%;
@@ -221,7 +197,7 @@ h2, h3, p, ul, ol, .table, canvas {
     grid-template-areas: 
     "header"
     "mainContent"
-    "rightSidebar"
+    "leftSidebar" 
     "footer";
   }
 }

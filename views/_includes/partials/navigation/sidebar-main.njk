@@ -1,0 +1,6 @@
+{% set navPages = collections.page | eleventyNavigation %}
+{% for item in navPages %}
+<ul role="list" class="navigation-list">
+    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+</ul>
+{% endfor %}
