@@ -1,5 +1,8 @@
 ---
 title: Eleventy Navigation
+eleventyNavigation:
+  key: Eleventy Navigation
+  parent: Eleventy
 ---
 ### Sources
 - [Official Documentation](https://www.11ty.dev/docs/plugins/navigation/)

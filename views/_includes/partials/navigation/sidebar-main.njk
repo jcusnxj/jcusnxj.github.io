@@ -1,6 +1,12 @@
+<div class="navigation-list">
 {% set navPages = collections.page | eleventyNavigation %}
-{% for item in navPages %}
-<ul role="list" class="navigation-list">
+<ul role="list">
+    {% for item in navPages %}
     <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
 </ul>
-{% endfor %}
+</div>
+
+{% if page.url.toString().startsWith('/note/') %}
+{% include "partials/navigation/sidebar-notes.njk" %}
+{% endif %}

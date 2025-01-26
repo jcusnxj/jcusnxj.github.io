@@ -1,5 +1,8 @@
 ---
 title: RSS Plugin
+eleventyNavigation:
+  key: RSS Plugin
+  parent: Eleventy
 ---
 ### Sources
 - [Official Documentation](https://www.11ty.dev/docs/plugins/rss/)

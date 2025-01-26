@@ -1,5 +1,8 @@
 ---
 title: Google Sheets API
+eleventyNavigation:
+  key: Google Sheets API
+  parent: Eleventy
 ---
 ### Sources
 - [ChatGPT](https://chatgpt.com)

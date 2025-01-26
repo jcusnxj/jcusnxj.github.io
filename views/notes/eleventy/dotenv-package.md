@@ -1,5 +1,8 @@
 ---
 title: dotenv package
+eleventyNavigation:
+  key: dotenv package
+  parent: Eleventy
 ---
 ### Sources
 - [GitHub Repository](https://github.com/motdotla/dotenv)

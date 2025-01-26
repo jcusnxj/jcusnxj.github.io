@@ -1,5 +1,8 @@
 ---
 title: Tailwind CSS
+eleventyNavigation:
+  key: Tailwind CSS
+  parent: Eleventy
 ---
 ### Sources
 - [Official Documentation](https://tailwindcss.com/docs/installation)

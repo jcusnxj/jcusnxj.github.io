@@ -80,7 +80,7 @@ body {
     margin: 0 auto;
 }
 
-a {
+a, .dropdown-btn {
   color:#2563eb;
   text-decoration: none;
 }
@@ -98,7 +98,7 @@ h2, h3, p, ul, ol, .table, canvas {
   display: grid;
   max-width: 968px;
   margin: 0 auto;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 250px 1fr;
   grid-template-rows: auto; 
   grid-template-areas: 
   "header header"
@@ -134,6 +134,26 @@ h2, h3, p, ul, ol, .table, canvas {
   align-items: center;
   justify-content: center;
   color: lightslategray;
+}
+
+/* SIDEBAR NAVIGATION */
+.navigation-list {
+  padding-bottom: 2rem;
+}
+
+.navigation-list a, .dropdown-btn {
+  padding-left: 0;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-container {
+  display: none;
 }
 
 /* TABLES */
@@ -189,7 +209,7 @@ h2, h3, p, ul, ol, .table, canvas {
 
 
 /* RESPONSIVE */
-@media (max-width: 1068px) { 
+@media (max-width: 1018px) { 
   .page {
     display: grid;
     grid-template-columns: 100%;

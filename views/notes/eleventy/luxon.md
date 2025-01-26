@@ -1,5 +1,8 @@
 ---
 title: luxon
+eleventyNavigation:
+  key: luxon
+  parent: Eleventy
 ---
 ### Sources
 - [11ty Date Shortcodes and Filters](https://11ty.rocks/eleventyjs/dates/) 

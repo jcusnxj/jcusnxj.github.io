@@ -1,5 +1,8 @@
 ---
 title: Tailwind CSS - Dark Mode Switcher
+eleventyNavigation:
+  key: Tailwind CSS - Dark Mode Switcher
+  parent: Eleventy
 ---
 ### Sources
 - [Official Documentation](https://tailwindcss.com/docs/dark-mode)

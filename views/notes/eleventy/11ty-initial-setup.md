@@ -1,5 +1,8 @@
 ---
 title: 11ty Initial Setup
+eleventyNavigation:
+  key: 11ty Initial Setup
+  parent: Eleventy
 ---
 ### Sources
 

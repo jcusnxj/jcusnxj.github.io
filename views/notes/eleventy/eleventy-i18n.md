@@ -1,5 +1,8 @@
 ---
 title: Eleventy i18n
+eleventyNavigation:
+  key: Eleventy i18n
+  parent: Eleventy
 ---
 ### Sources
 - [Official Documentation](https://www.11ty.dev/docs/plugins/i18n/)

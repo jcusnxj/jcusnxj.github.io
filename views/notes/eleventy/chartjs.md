@@ -1,5 +1,8 @@
 ---
 title: Chart.js
+eleventyNavigation:
+  key: Chart.js
+  parent: Eleventy
 ---
 ### Sources
 - [Official Documentation](https://www.chartjs.org/docs/latest/getting-started/)

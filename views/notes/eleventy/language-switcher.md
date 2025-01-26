@@ -1,5 +1,8 @@
 ---
 title: Language Switcher
+eleventyNavigation:
+  key: Language Switcher
+  parent: Eleventy
 ---
 ### Sources
 - [Language switcher for multilingual JAMstack sites](https://www.webstoemp.com/blog/language-switcher-multilingual-jamstack-sites/) 
