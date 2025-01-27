@@ -135,7 +135,6 @@ hr {
     color: lightslategray;
 }
 
-
 /* RESPONSIVE */
 @media (max-width: 600px) { 
   .hidden-stuff {
