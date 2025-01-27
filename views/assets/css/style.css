@@ -64,7 +64,9 @@ p, table, canvas {
 }
 
 hr {
-  border: 0.3px solid #cbd5e1;
+  border: 0px;
+  height: 1px;
+  background-color: #cbd5e1;
 }
 
 /* MAIN CONTENT */
