@@ -141,4 +141,12 @@ hr {
   .hidden-stuff {
     display: none; 
   }
+
+  .site-header {
+    height: 5rem;
+  }
+
+  .main-content {
+    min-height: calc(100dvh - 11rem);
+  }
 }
