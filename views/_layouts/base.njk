@@ -27,28 +27,20 @@
 <body>
 
     <!-- PAGE LAYOUT -->
-    <div class="page">
+    <div class="page-container">
 
         <!-- HEADER -->
         <header class="site-header">
-            <h1 class="site-title"><a href="/">jcusnxj</a></h1>
+            <h1 class="page-title">{{ title }}</h1>
+            <hr>
+            {% include "partials/breadcrumb.njk" %}
         </header>
-
-        <!-- LEFT SIDEBAR -->
-        <nav class="left-sidebar">
-            {% block leftSidebar %}
-            {% include "partials/navigation/sidebar-main.njk" %}
-            {% endblock %}
-        </nav>
 
         <!-- MAIN CONTENT -->
         <main class="main-content">
-            <div class="main-container">
-                <h2 class="page-title">{{ title }}</h2>
-                {% block mainContent %}
-                {{ content | safe }}
-                {% endblock %}
-            </div>
+            {% block mainContent %}
+            {{ content | safe }}
+            {% endblock %}
         </main>
 
         <!-- FOOTER -->
@@ -59,10 +51,7 @@
     </div>
 
     <script src="/assets/js/barchart.js"></script>
-    <script src="/assets/js/dropdown.js"></script>
 
 </body>
-
-</div>
 
 </html>
