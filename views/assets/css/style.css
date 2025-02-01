@@ -104,6 +104,10 @@ hr {
   margin: 1rem 0;
 }
 
+.copyright {
+  font-size: smaller;
+}
+
 /* BLOG FEED */
 .post-date {
   color: lightslategray;
