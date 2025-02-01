@@ -28,11 +28,14 @@ ol[role='list'] {
 
 /* DEAFAULTS */
 
+html {
+  font-size: 16px;
+}
+
 body {
     font-size: 1rem;
     line-height: 1.5;
     font-family: 'Bitter', 'Open Sans', 'Roboto Mono', sans-serif;
-    /* background-color:#fef3c7; */
     background-color: #091e36;
     color: whitesmoke;
 }
@@ -87,7 +90,7 @@ hr {
 
 /* MAIN CONTENT */
 .main-content {
-  min-height: calc(100dvh - 14rem);
+  min-height: calc(100dvh - 15rem);
 }
 
 /* FOOTER */
@@ -98,7 +101,7 @@ hr {
   align-items: center;
   justify-content: center;
   color: lightslategray;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 /* BLOG FEED */
