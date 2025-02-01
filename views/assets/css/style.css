@@ -34,9 +34,13 @@ body {
     background-color:#fef3c7;
 }
 
-h1 {
+h1, h2, h3 {
   line-height: 1.2;
   font-weight: 400;
+}
+
+h2 {
+  font-size: 1.2rem;
 }
 
 .page-container {
@@ -83,6 +87,12 @@ hr {
   justify-content: center;
   color: lightslategray;
   margin-bottom: 1rem;
+}
+
+/* BLOG FEED */
+.post-date {
+  color: lightslategray;
+  font-size: 95%;
 }
 
 /* TABLES */

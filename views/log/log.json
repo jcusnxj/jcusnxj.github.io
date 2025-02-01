@@ -1,6 +1,6 @@
 {
     "layout": "monthlyreport",
-    "tags": ["running"],
+    "tags": ["running","post"],
     "permalink": "/log/{{ page.fileSlug }}/",
     "category": "running"
 }
