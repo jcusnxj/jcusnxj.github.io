@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 title: {
                     display: true,
                     text: 'Monthly distance',
+                    color: '#778899',
                     font: {
                         size: fontSizeInPx, // Dynamically set font size in pixels
                         family: 'Bitter, sans-serif'

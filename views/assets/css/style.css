@@ -42,6 +42,7 @@ body {
 
 h1, h2, h3 {
   line-height: 1.2;
+  font-style: italic;
 }
 
 h1 {
@@ -80,6 +81,7 @@ p, table, canvas {
   flex-direction: column;
   justify-content: flex-end;
   margin-bottom: 1rem;
+  font-style: italic;
 }
 
 hr {
@@ -112,6 +114,7 @@ hr {
 .post-date {
   color: lightslategray;
   font-size: 95%;
+  font-style: italic;
 }
 
 /* TABLES */
@@ -121,20 +124,16 @@ hr {
   border-collapse: collapse;
   margin: 0 auto;
   font-size: 95%;
-  color: lightslategray;
+  color: #666666;
 }
 
 .unit-cell, .data-cell {
   border-bottom: 1px solid #2F3439;
 }
 
-.unit-cell {
-  font-style: italic;
-  color: lightslategray;
-}
-
-.total-row {
+.total-row, .header-row {
   font-weight: bold;
+  color: #778899;
 }
 
 /* PAGINATION */
@@ -143,6 +142,7 @@ hr {
   justify-content: space-between;
   font-size: 95%;
   padding-top: 2rem;
+  font-style: italic;
 }
 
 .pagination a {
