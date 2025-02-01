@@ -29,18 +29,26 @@ ol[role='list'] {
 /* DEAFAULTS */
 
 body {
+    font-size: 1rem;
     line-height: 1.5;
     font-family: 'Bitter', 'Open Sans', 'Roboto Mono', sans-serif;
-    background-color:#fef3c7;
+    /* background-color:#fef3c7; */
+    background-color: #091e36;
+    color: whitesmoke;
 }
 
 h1, h2, h3 {
   line-height: 1.2;
-  font-weight: 400;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .page-container {
@@ -50,8 +58,12 @@ h2 {
 }
 
 a {
-  color:#2563eb;
+  color:dodgerblue;
   text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 p, table, canvas {
@@ -70,7 +82,7 @@ p, table, canvas {
 hr {
   border: 0px;
   height: 1px;
-  background-color: #cbd5e1;
+  background-color: #2F3439;
 }
 
 /* MAIN CONTENT */
@@ -95,6 +107,10 @@ hr {
   font-size: 95%;
 }
 
+.post-title {
+  color:dodgerblue;
+}
+
 /* TABLES */
 .table-overview {
   width: 95%;
@@ -102,10 +118,11 @@ hr {
   border-collapse: collapse;
   margin: 0 auto;
   font-size: 95%;
+  color: lightslategray;
 }
 
 .unit-cell, .data-cell {
-  border-bottom: 1px solid #cbd5e1;
+  border-bottom: 1px solid #2F3439;
 }
 
 .unit-cell {
