@@ -174,10 +174,11 @@ hr {
 
   .site-header {
     height: 5rem;
+    margin-top: 1rem;
   }
 
   .main-content {
-    min-height: calc(100dvh - 11rem);
+    min-height: calc(100dvh - 12rem);
   }
 
   .page-title {
