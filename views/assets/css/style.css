@@ -176,4 +176,8 @@ hr {
   .main-content {
     min-height: calc(100dvh - 11rem);
   }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
 }
