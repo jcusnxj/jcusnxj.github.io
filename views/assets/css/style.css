@@ -36,7 +36,7 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     font-family: 'Bitter', 'Open Sans', 'Roboto Mono', sans-serif;
-    background-color: #091e36;
+    background-color: #011627;
     color: whitesmoke;
 }
 
@@ -61,7 +61,7 @@ h2 {
 }
 
 a {
-  color:dodgerblue;
+  color:#20A4F3;
   text-decoration: none;
 }
 
@@ -112,10 +112,6 @@ hr {
 .post-date {
   color: lightslategray;
   font-size: 95%;
-}
-
-.post-title {
-  color:dodgerblue;
 }
 
 /* TABLES */
