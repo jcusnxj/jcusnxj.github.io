@@ -23,7 +23,7 @@ export default function (eleventyConfig) {
 		metadata: {
 			language: "en",
 			title: "jcusnxj",
-			subtitle: "A personal website build in 11ty.",
+			subtitle: "A personal website built in 11ty.",
 			base: "https://jcusnxj.net/",
 			author: {
 				name: "František Müller",
