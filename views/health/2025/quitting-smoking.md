@@ -10,4 +10,6 @@ eleventyNavigation:
 > ___Mark Twain___
 <!-- excerpt -->
 
-I know that very well. I've tried it literally thousands of times, and today is the day I'll try again. I don't have much to add, even though I do want to quit. It might sound silly, but I hope this little internet corner of mine will help me too. I'm writing it down and making it constantly visible to myself.   
+I've done it literally thousands of times. I'm certainly good at not giving up on trying, but I'm obviously not that good at learning from my previous failures. After more than two decades, I've started to realize that any reasons I have for quitting should ideally connect to something that truly matters to me — something I value and can relate to. Surprising, right? Yeah, I'm not the wittiest guy, and I always needed a bit of extra time.
+
+Anyway, what is it then? It's actually a basic thing: health. It was never a thing for me, but it is now. I'm not sick or anything like that — my priorities have just changed. Why now? I'm getting older .-) Long story short, today is the day I'll try again.
