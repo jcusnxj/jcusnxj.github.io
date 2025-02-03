@@ -1,0 +1,6 @@
+{
+    "layout": "base",
+    "tags": ["health"],
+    "permalink": "/health/{{ page.fileSlug }}/",
+    "category": "health"
+}

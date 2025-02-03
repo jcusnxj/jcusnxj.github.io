@@ -165,6 +165,15 @@ hr {
     color: gray;
 }
 
+/* BLOCKQUOTES */
+
+blockquote {
+  margin: 0 1rem 1rem 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid limegreen;
+  background-color:bisque;
+}
+
 /* RESPONSIVE */
 @media (max-width: 600px) { 
   .hidden-stuff {
