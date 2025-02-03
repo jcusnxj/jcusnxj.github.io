@@ -35,14 +35,12 @@ html {
 body {
     font-size: 1rem;
     line-height: 1.5;
-    font-family: 'Bitter', 'Open Sans', 'Roboto Mono', sans-serif;
-    background-color: #011627;
-    color: whitesmoke;
+    font-family: 'Bitter','Roboto Mono','Open Sans', sans-serif;
+    background-color:#fdf6e3;
 }
 
 h1, h2, h3 {
   line-height: 1.2;
-  font-style: italic;
 }
 
 h1 {
@@ -62,7 +60,7 @@ h2 {
 }
 
 a {
-  color:#20A4F3;
+  color:#1d9ce5;
   text-decoration: none;
 }
 
@@ -81,13 +79,12 @@ p, table, canvas {
   flex-direction: column;
   justify-content: flex-end;
   margin-bottom: 1rem;
-  font-style: italic;
 }
 
 hr {
   border: 0px;
   height: 1px;
-  background-color: #2F3439;
+  background-color: lightgray;
 }
 
 /* MAIN CONTENT */
@@ -102,7 +99,7 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: lightslategray;
+  color: gray;
   margin: 1rem 0;
 }
 
@@ -112,7 +109,7 @@ hr {
 
 /* BLOG FEED */
 .post-date {
-  color: lightslategray;
+  color: gray;
   font-size: 95%;
   font-style: italic;
 }
@@ -124,11 +121,11 @@ hr {
   border-collapse: collapse;
   margin: 0 auto;
   font-size: 95%;
-  color: lightslategray;
+  color: gray; /* #808080 */
 }
 
 .unit-cell, .data-cell {
-  border-bottom: 1px solid #2F3439;
+  border-bottom: 1px solid lightgray; /* #D3D3D3 */
 }
 
 .unit-cell {
@@ -137,7 +134,6 @@ hr {
 
 .total-row, .header-row {
   font-weight: bold;
-  color: #778899;
 }
 
 /* PAGINATION */
@@ -146,7 +142,6 @@ hr {
   justify-content: space-between;
   font-size: 95%;
   padding-top: 2rem;
-  font-style: italic;
 }
 
 .pagination a {
@@ -162,12 +157,12 @@ hr {
 }
 
 .crumb-last {
-    color: lightslategray;
+    color: gray;
 }
 
 .crumb::after {
     content: " > ";
-    color: lightslategray;
+    color: gray;
 }
 
 /* RESPONSIVE */

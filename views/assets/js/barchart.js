@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 title: {
                     display: true,
                     text: 'Monthly distance',
-                    color: '#778899',
+                    color: '#808080',
                     font: {
                         size: fontSizeInPx, // Dynamically set font size in pixels
                         family: 'Bitter, sans-serif'
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 x: {
                     grid: {
                         display: false, // Remove vertical gridlines
-                        color: '#2F3439'
+                        color: '#D3D3D3'
                     },
                     ticks: {
                         font: {
@@ -65,11 +65,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     beginAtZero: true,
                     border: {
                         display: false,
-                        color: '#2F3439'
+                        color: '#D3D3D3'
                     },
                     grid: {
                         display: true,
-                        color: '#2F3439', // Sets horizontal grid lines
+                        color: '#D3D3D3', // Sets horizontal grid lines
                     },
                     title: {
                         display: true, // Display the Y-axis label
