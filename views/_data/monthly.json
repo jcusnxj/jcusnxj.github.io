@@ -20,5 +20,16 @@
     "ascent": "286",
     "cadence": "160",
     "id": "2501"
+  },
+  {
+    "month": "Feb 25",
+    "eomonth": "2025-02-28",
+    "distance": "4.3",
+    "duration": "00:29:34",
+    "pace": "06:49",
+    "avghr": "151",
+    "ascent": "39",
+    "cadence": "162",
+    "id": "2502"
   }
 ]
