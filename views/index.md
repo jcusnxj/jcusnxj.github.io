@@ -6,9 +6,21 @@ eleventyNavigation:
   key: jcusnxj
   order: 1
 ---
-{% set postPages = collections.post | reverse %}
-{% for post in postPages %}
-<h2 class="no-pb"><a href="{{ post.url }}" class="post-title">{{ post.data.title }}</a></h2>
-<p class="post-date">{{ post.data.date | dateObject("LLL d, yyyy") }}</p>
-<p class="post-excerpt">{{ post.data.page.excerpt }}</p>
-{% endfor %}
+## Hey there!
+
+I'm František, welcome to my website! 
+
+I was born in Czechoslovakia in 1980. I'm a father of two and a husband to one. 
+
+I enjoy playing around with this little corner of the internet. I have to warn you that I might be the only target audience of the author - just setting the expectations right.
+
+<a href="/log/">running log</a> | <a href="/health/">health</a> | <a href="/blog/">blog</a> | <a href="/blogroll">blogroll</a>
+
+People seem to have a _Colophon_ section on their sites. I've never heard that word so I'll skip it.
+
+What else is there to say... thanks for stopping by!
+
+František
+
+
+
