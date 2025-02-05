@@ -7,10 +7,8 @@ eleventyNavigation:
   parent: jcusnxj
   order: 1
 ---
-Welcome to my personal website!
+## Hey there!
 
-Feel free to check out my [running log](/log/), where I track my progress. That’s pretty much all you’ll find here for now.
+I'm František, welcome to my website! 
 
-Thanks for stopping by!
-
-František
+I was born in Czechoslovakia in 1980. I'm a father of two and a husband to one.
