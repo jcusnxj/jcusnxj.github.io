@@ -5,7 +5,7 @@ import 'dotenv/config'
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
 export default function (eleventyConfig) {
-    
+
     eleventyConfig.addPassthroughCopy("views/assets/css");
     eleventyConfig.addPassthroughCopy("views/assets/img");
     eleventyConfig.addPassthroughCopy("views/assets/js");
@@ -14,23 +14,23 @@ export default function (eleventyConfig) {
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(feedPlugin, {
-		type: "atom", // or "rss", "json"
-		outputPath: "/feed.xml",
-		collection: {
-			name: "post", // iterate over `collections.posts`
-			limit: 10,     // 0 means no limit
-		},
-		metadata: {
-			language: "en",
-			title: "jcusnxj",
-			subtitle: "A personal website built in 11ty.",
-			base: "https://jcusnxj.net/",
-			author: {
-				name: "František Müller",
-				email: "", // Optional
-			}
-		}
-	});
+        type: "atom", // or "rss", "json"
+        outputPath: "/feed.xml",
+        collection: {
+            name: "post", // iterate over `collections.posts`
+            limit: 10,     // 0 means no limit
+        },
+        metadata: {
+            language: "en",
+            title: "jcusnxj",
+            subtitle: "A personal website built in 11ty.",
+            base: "https://jcusnxj.net/",
+            author: {
+                name: "František Müller",
+                email: "", // Optional
+            }
+        }
+    });
 
     // EXCERPTS
     eleventyConfig.setFrontMatterParsingOptions({
@@ -42,7 +42,7 @@ export default function (eleventyConfig) {
     //SHORTCODES
     // get the current year
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`); //import DateTime from luxon
-    
+
     //FILTERS
     //withinDateRange (for running log - daily)
     eleventyConfig.addFilter("withinDateRange", (dateStr, startDateStr, endDateStr) => {
@@ -65,12 +65,12 @@ export default function (eleventyConfig) {
     // converts data into string (for daily workouts summary)
     eleventyConfig.addFilter("date", (date, format) => {
         return DateTime.fromJSDate(date).toFormat(format);
-      });
+    });
 
     // jsonify filter (to read running data)
-	eleventyConfig.addFilter("jsonify", function(value) {
-		return JSON.stringify(value);
-	  });
+    eleventyConfig.addFilter("jsonify", function (value) {
+        return JSON.stringify(value);
+    });
 
 };
 

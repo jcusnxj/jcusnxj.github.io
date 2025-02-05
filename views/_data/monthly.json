@@ -8,7 +8,9 @@
     "avghr": "154",
     "ascent": "231",
     "cadence": "160",
-    "id": "2412"
+    "id": "2412",
+    "weight": "84.3",
+    "bodyfat": "31.9"
   },
   {
     "month": "Jan 25",
@@ -19,7 +21,9 @@
     "avghr": "144",
     "ascent": "286",
     "cadence": "160",
-    "id": "2501"
+    "id": "2501",
+    "weight": "83.4",
+    "bodyfat": "31.3"
   },
   {
     "month": "Feb 25",
@@ -30,6 +34,8 @@
     "avghr": "151",
     "ascent": "39",
     "cadence": "162",
-    "id": "2502"
+    "id": "2502",
+    "weight": "82.8",
+    "bodyfat": "31.0"
   }
 ]

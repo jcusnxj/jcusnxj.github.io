@@ -1,6 +1,6 @@
 {
     "layout": "base",
-    "tags": ["health"],
+    "tags": ["health","post"],
     "permalink": "/health/{{ page.fileSlug }}/",
     "category": "health"
 }

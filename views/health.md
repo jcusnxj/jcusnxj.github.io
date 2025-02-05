@@ -7,4 +7,6 @@ eleventyNavigation:
   parent: jcusnxj
   order: 1
 ---
-tbd
+<div>
+  <canvas id="myChartHealth" data-chart='{{ monthly | jsonify  }}'></canvas>
+</div>

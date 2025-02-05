@@ -11,7 +11,7 @@ async function fetchAndSaveGoogleSheetsData() {
     const apiKey = process.env.GOOGLE_SHEETS_API_KEY;
     const sheetId = process.env.GOOGLE_SHEET_ID;
     const range1 = 'log!A:I';
-    const range2 = 'monthly!A:I';
+    const range2 = 'monthly!A:K';
 
     if (!apiKey || !sheetId) {
         throw new Error('Missing required environment variables.');
@@ -69,6 +69,8 @@ async function fetchAndSaveGoogleSheetsData() {
         ascent: row[sheet2.headers.indexOf('ascent')],
         cadence: row[sheet2.headers.indexOf('cadence')],
         id: row[sheet2.headers.indexOf('id')],
+        weight: row[sheet2.headers.indexOf('weight')],
+        bodyfat: row[sheet2.headers.indexOf('bodyfat')],
     }));
 
     // Define paths for output files
