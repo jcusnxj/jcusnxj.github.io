@@ -18,7 +18,7 @@ I enjoy playing around with this little corner of the internet. I have to warn y
 
 People seem to have a _Colophon_ section on their sites. I've never heard that word so I'll skip it.
 
-What else is there to say... thanks for stopping by!
+What else is there to say... yeah, thanks for stopping by!
 
 František
 
