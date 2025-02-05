@@ -207,5 +207,16 @@
     "cadence": "162",
     "garmin": "https://connect.garmin.com/modern/activity/18176548817",
     "location": "Chod"
+  },
+  {
+    "date": "2025-02-05",
+    "distance": "4.3",
+    "duration": "00:30:34",
+    "pace": "07:05",
+    "avghr": "147",
+    "ascent": "31",
+    "cadence": "157",
+    "garmin": "https://connect.garmin.com/modern/activity/18198035552",
+    "location": "Chod"
   }
 ]
