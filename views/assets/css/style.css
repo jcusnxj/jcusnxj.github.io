@@ -68,12 +68,8 @@ a:hover {
   font-weight: 600;
 }
 
-p, table, canvas, h2, ul {
+p, table, canvas, h2 {
   padding-bottom: 1rem;
-}
-
-.pt {
-  padding-top: 1.5rem;
 }
 
 /* SITE HEADER */
