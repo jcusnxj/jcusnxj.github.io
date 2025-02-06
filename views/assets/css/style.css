@@ -68,7 +68,7 @@ a:hover {
   font-weight: 600;
 }
 
-p, table, canvas, h2 {
+p, table, canvas, h2, ul {
   padding-bottom: 1rem;
 }
 
@@ -163,20 +163,6 @@ hr {
 .crumb::after {
     content: " > ";
     color: gray;
-}
-
-/* ARCHIVE */
-
-.archive {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.archive-date {
-  flex-basis: 80px;
-  padding-left: 0.5rem;
-  font-weight: 600;
-  color: gray;
 }
 
 /* BLOCKQUOTES */
