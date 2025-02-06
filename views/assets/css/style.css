@@ -45,7 +45,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 2rem;
-  font-weight:400;
+  font-weight:500;
 }
 
 h2 {
@@ -70,10 +70,6 @@ a:hover {
 
 p, table, canvas, h2 {
   padding-bottom: 1rem;
-}
-
-.no-pb {      /* no padding-bottom */
-  padding-bottom: 0;
 }
 
 /* SITE HEADER */
@@ -167,6 +163,20 @@ hr {
 .crumb::after {
     content: " > ";
     color: gray;
+}
+
+/* ARCHIVE */
+
+.archive {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.archive-date {
+  flex-basis: 80px;
+  padding-left: 0.5rem;
+  font-weight: 600;
+  color: gray;
 }
 
 /* BLOCKQUOTES */
