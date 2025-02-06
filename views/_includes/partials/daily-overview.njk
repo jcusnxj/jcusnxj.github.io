@@ -23,7 +23,11 @@
       {% if item.date | withinDateRange(startDate, endDate) %}
       {% set totalItems = totalItems + 1 %}
       <tr class="data-row">
+        {% if item.id %}
+        <td class="data-cell"><a href="/log/{{ item.id }}/">{{ item.date | dateString }}</a></td>
+        {% else %}
         <td class="data-cell">{{ item.date | dateString }}</td>
+        {% endif %}
         <td class="data-cell">{{ item.distance }}</td>
         <td class="data-cell hidden-stuff">{{ item.duration }}</td>
         <td class="data-cell">{{ item.pace }}</td>

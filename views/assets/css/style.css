@@ -72,6 +72,10 @@ p, table, canvas, h2, ul {
   padding-bottom: 1rem;
 }
 
+.pt {
+  padding-top: 1.5rem;
+}
+
 /* SITE HEADER */
 .site-header {
   height: 8rem;
