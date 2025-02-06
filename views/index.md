@@ -16,8 +16,6 @@ I really enjoy personal websites. I love both visiting them and playing around w
 
 Thanks for stopping by!
 
-f
-
 [running log](/log) | [health](/health) | [blogroll](/blogroll) 
 
 
