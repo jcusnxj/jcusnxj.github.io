@@ -1,22 +1,8 @@
 ---
 title: jcusnxj
-layout: base
+layout: log
 tags: page
 eleventyNavigation:
   key: jcusnxj
-  order: 1
 ---
-## Hey there!
-
-Welcome to my personal website! 
-
-I'm František and I was born in Czechoslovakia in 1980. I'm a father of two and a husband to one. 
-
-I really enjoy personal websites. I love both visiting them and playing around with my own.  
-
-Thanks for stopping by!
-
-[running log](/log) | [blogroll](/blogroll) | [rss](/feed.xml)
-
-
-
+I decided to get back to running in December 2024. If the data below also include some of the most recent months, it’s a good sign — I haven’t given up yet!

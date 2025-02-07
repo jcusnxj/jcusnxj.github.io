@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 },
                 title: {
                     display: true,
-                    text: 'Monthly distance',
+                    text: 'Monthly running distance',
                     color: '#808080',
                     font: {
                         size: fontSizeInPx, // Dynamically set font size in pixels
