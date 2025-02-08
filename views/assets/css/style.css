@@ -141,7 +141,7 @@ hr {
   display:flex;
   justify-content: space-between;
   font-size: 95%;
-  padding-top: 2rem;
+  margin-top: 1rem;
 }
 
 .pagination a {
