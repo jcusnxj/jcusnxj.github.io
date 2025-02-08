@@ -188,6 +188,7 @@ blockquote {
   left: 0;
   display: flex;
   z-index: 2;
+  overflow: hidden;
 }
 .modal-overlay {
   width: 100%;
@@ -205,6 +206,8 @@ blockquote {
   padding: 48px 24px;
   border-radius: 4px;
   max-width: 1000px;
+  max-height: 90vh; 
+  overflow-y: auto;
 }
 .modal-close {
   font-size: 36px;
