@@ -10,7 +10,7 @@ async function fetchAndSaveGoogleSheetsData() {
     const sheets = google.sheets('v4');
     const apiKey = process.env.GOOGLE_SHEETS_API_KEY;
     const sheetId = process.env.GOOGLE_SHEET_ID;
-    const range1 = 'log!A:J';
+    const range1 = 'log!A:K';
     const range2 = 'monthly!A:K';
 
     if (!apiKey || !sheetId) {
@@ -58,6 +58,7 @@ async function fetchAndSaveGoogleSheetsData() {
         garmin: row[sheet1.headers.indexOf('garmin')],
         location: row[sheet1.headers.indexOf('location')],
         id: row[sheet1.headers.indexOf('id')],
+        post: row[sheet1.headers.indexOf('post')],
     }));
 
     const monthly = sheet2.dataRows.map((row) => ({

@@ -1,6 +1,5 @@
-
 <div class="modal-btn">
- ~<a class="" href="#modal"> runs in {{ page.date | dateObject("LLL") }} </a>~
+  ~<a class="" href="#modal"> runs in {{ page.date | dateObject("LLL") }} </a>~
 </div>
 
 <section role="dialog" class="modal" id="modal" aria-labelledby="modal-title">
@@ -9,69 +8,74 @@
     <a title="Close modal" aria-label="Close modal" href="#" class="modal-close">&times; </a>
     <h2 class="modal-title">{{ title }}</h2>
 
-  <table class="table-overview">
-    <thead>
-      <tr class="header-row">
-        <th>Date</th>
-        <th>Distance</th>
-        <th class="hidden-stuff">Duration</th>
-        <th>Pace</th>
-        <th>Avg HR</th>
-        <!-- <th class="hidden-stuff">Location</th> -->
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="unit-row">
-        <td class="unit-cell">mm-dd</td>
-        <td class="unit-cell">km</td>
-        <td class="unit-cell hidden-stuff">hh:mm:ss</td>
-        <td class="unit-cell">min/km</td>
-        <td class="unit-cell">bpm</td>
-        <!-- <td class="unit-cell hidden-stuff">link</td> -->
-      </tr>
-      {% set totalItems = 0 %}
-      {% for item in workout | reverse %}
-      {% if item.date | withinDateRange(startDate, endDate) %}
-      {% set totalItems = totalItems + 1 %}
-      <tr class="data-row">
-        {% if item.id %}
-        <td class="data-cell"><a href="/log/{{ item.id }}/">{{ item.date | dateString }}</a></td>
-        {% else %}
-        <td class="data-cell">{{ item.date | dateString }}</td>
+    <table class="table-overview">
+      <thead>
+        <tr class="header-row">
+          <th>Date</th>
+          <th>Distance</th>
+          <th class="hidden-stuff">Duration</th>
+          <th>Pace</th>
+          <th>Avg HR</th>
+          <!-- <th class="hidden-stuff">Location</th> -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="unit-row">
+          <td class="unit-cell">mm-dd</td>
+          <td class="unit-cell">km</td>
+          <td class="unit-cell hidden-stuff">hh:mm:ss</td>
+          <td class="unit-cell">min/km</td>
+          <td class="unit-cell">bpm</td>
+          <!-- <td class="unit-cell hidden-stuff">link</td> -->
+        </tr>
+        {% set totalItems = 0 %}
+        {% for item in workout | reverse %}
+        {% if item.date | withinDateRange(startDate, endDate) %}
+        {% set totalItems = totalItems + 1 %}
+        <tr class="data-row">
+          {% if item.id %}
+          <td class="data-cell"><a href="/log/{{ item.id }}/">
+              <div class="tooltip">
+                {{ item.date | dateString }}
+                <span class="tooltiptext">{{ item.post }}</span>
+              </div>
+            </a></td>
+          {% else %}
+          <td class="data-cell">{{ item.date | dateString }}</td>
+          {% endif %}
+          <td class="data-cell">{{ item.distance }}</td>
+          <td class="data-cell hidden-stuff">{{ item.duration }}</td>
+          <td class="data-cell">{{ item.pace }}</td>
+          <td class="data-cell">{{ item.avghr }}</td>
+          <!-- <td class="data-cell hidden-stuff"><a href="{{ item.garmin }}">{{ item.location }}</a></td> -->
+        </tr>
         {% endif %}
-        <td class="data-cell">{{ item.distance }}</td>
-        <td class="data-cell hidden-stuff">{{ item.duration }}</td>
-        <td class="data-cell">{{ item.pace }}</td>
-        <td class="data-cell">{{ item.avghr }}</td>
-        <!-- <td class="data-cell hidden-stuff"><a href="{{ item.garmin }}">{{ item.location }}</a></td> -->
-      </tr>
-      {% endif %}
-      {% endfor %}
+        {% endfor %}
 
-      {% set matchingRecord = null %}
+        {% set matchingRecord = null %}
 
-      {% set endDateStr = endDate | date('yyyy-MM-dd') %}
-      {% for item in monthly %}
-      {% if item.eomonth == endDateStr %}
-      {% set matchingRecord = item %}
-      {% endif %}
-      {% endfor %}
+        {% set endDateStr = endDate | date('yyyy-MM-dd') %}
+        {% for item in monthly %}
+        {% if item.eomonth == endDateStr %}
+        {% set matchingRecord = item %}
+        {% endif %}
+        {% endfor %}
 
-      <tr class="total-row">
-        <td>{{ totalItems }} x</td>
-        <td>{{ matchingRecord.distance }}</td>
-        <td class="hidden-stuff">{{ matchingRecord.duration }}</td>
-        <td>{{ matchingRecord.pace }}</td>
-        <td>{{ matchingRecord.avghr }}</td>
-        <!-- <td class="hidden-stuff">-</td> -->
-      </tr>
+        <tr class="total-row">
+          <td>{{ totalItems }} x</td>
+          <td>{{ matchingRecord.distance }}</td>
+          <td class="hidden-stuff">{{ matchingRecord.duration }}</td>
+          <td>{{ matchingRecord.pace }}</td>
+          <td>{{ matchingRecord.avghr }}</td>
+          <!-- <td class="hidden-stuff">-</td> -->
+        </tr>
 
-    </tbody>
-  </table>
+      </tbody>
+    </table>
 
-<div>
-  {% include "partials/pagination2.njk" %}
-</div>
+    <div>
+      {% include "partials/pagination2.njk" %}
+    </div>
 
-</div>
+  </div>
 </section>

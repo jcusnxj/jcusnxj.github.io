@@ -232,6 +232,36 @@ blockquote {
   display: none;
 }
 
+/* TOOLTIP */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color:whitesmoke;
+  color: gray;
+  text-align: center;
+  padding: 0px 5px;
+  border-radius: 6px;
+  font-style: italic;
+  font-size: 90%;
+  white-space: nowrap;
+ 
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 120%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 /* RESPONSIVE */
 @media (max-width: 600px) { 
