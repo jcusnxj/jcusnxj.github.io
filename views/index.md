@@ -17,4 +17,4 @@ Thanks for stopping by!
 
 f
 
-[Running Log](/log)
+[Running Log](/log) | [RSS](/feed.xml)
