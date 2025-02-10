@@ -34,12 +34,14 @@
         {% set totalItems = totalItems + 1 %}
         <tr class="data-row">
           {% if item.id %}
-          <td class="data-cell"><a href="/log/{{ item.id }}/">
-              <div class="tooltip">
+          <td class="data-cell">
+            <div class="tooltip">
+              <a href="/log/{{ item.id }}/">
                 {{ item.date | dateString }}
-                <span class="tooltiptext">{{ item.post }}</span>
-              </div>
-            </a></td>
+              </a>
+              <span class="tooltiptext">{{ item.post }}</span>
+            </div>
+          </td>
           {% else %}
           <td class="data-cell">{{ item.date | dateString }}</td>
           {% endif %}
