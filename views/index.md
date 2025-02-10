@@ -1,8 +1,20 @@
 ---
 title: jcusnxj
-layout: log
+layout: base
 tags: page
 eleventyNavigation:
   key: jcusnxj
 ---
-<!-- I decided to get back to running in December 2024. If the data below also include some of the most recent months, it’s a good sign — I haven’t given up yet! -->
+## Hey there!
+
+I'm František, welcome to my personal website! 
+
+I was born in Czechoslovakia in 1980. I'm a father of two and a husband to one. 
+
+I really enjoy personal websites. I love both visiting them and playing around with my own.  
+
+Thanks for stopping by!
+
+f
+
+[Running Log](/log)
