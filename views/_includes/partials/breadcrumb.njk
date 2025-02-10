@@ -2,7 +2,7 @@
 {% for crumb in navPages %}
 
 {% if loop.first %}
-<nav class="bredcrumb">
+<nav class="breadcrumb">
 {% endif %}
 
         {% if not loop.last %}
@@ -11,7 +11,7 @@
         {% else %}
         {% if page.url == "/" %}
         
-            <div class="crumb-last">Fuck it, dude. Let's go running.</div>
+            <div class="crumb-last">Fuck it, dude.</div>
  
         {% else %}
             <div class="crumb-last">{{ crumb.key }}</div>

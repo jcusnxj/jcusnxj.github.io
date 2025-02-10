@@ -153,6 +153,9 @@ hr {
 }
 
 /* BREADCRUMB */
+.breadcrumb {
+  padding-left: 0.1rem;
+}
 .crumb,
 .crumb-last {
     display: inline;
