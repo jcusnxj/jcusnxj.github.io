@@ -1,0 +1,9 @@
+{% extends "views/_layouts/base.njk" %}
+
+{% block mainContent %}
+{{ content | safe }} 
+<div class="center">
+~<a href="../{{ month }}/#modal"> runs in {{ page.date | dateObject("LLL") }} </a>~
+</div>
+{% include "partials/pagination.njk" %}
+{% endblock %}

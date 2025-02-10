@@ -3,12 +3,12 @@
 
 <section class="pagination">
   {% if previousPost %}
-  <a href="{{ previousPost.url }}"><< Previous</a>
+  <a href="{{ previousPost.url }}"><< Previous post</a>
   {% else %}
   <span></span> <!-- Placeholder for spacing -->
   {% endif %}
 
   {% if nextPost %}
-  <a href="{{ nextPost.url }}">Next >></a>
+  <a href="{{ nextPost.url }}">Next post >></a>
   {% endif %}
 </section>
