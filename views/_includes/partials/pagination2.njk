@@ -1,0 +1,14 @@
+{% set previousPost = collections.month | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.month | getNextCollectionItem(page) %}
+
+<section class="pagination">
+  {% if previousPost %}
+  <a href="{{ [previousPost.url + "#modal"] }}"><< Previous</a>
+  {% else %}
+  <span></span> <!-- Placeholder for spacing -->
+  {% endif %}
+
+  {% if nextPost %}
+  <a href="{{ [nextPost.url + "#modal"] }}">Next >></a>
+  {% endif %}
+</section>

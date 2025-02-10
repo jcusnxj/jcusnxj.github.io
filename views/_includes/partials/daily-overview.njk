@@ -1,6 +1,6 @@
 
 <div class="modal-btn">
- ~<a class="" href="#modal"> runs </a>~
+ ~<a class="" href="#modal"> runs in {{ page.date | dateObject("LLL") }} </a>~
 </div>
 
 <section role="dialog" class="modal" id="modal" aria-labelledby="modal-title">
@@ -67,6 +67,10 @@
 
     </tbody>
   </table>
+
+<div>
+  {% include "partials/pagination2.njk" %}
+</div>
 
 </div>
 </section>
