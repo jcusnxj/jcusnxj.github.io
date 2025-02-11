@@ -6,10 +6,10 @@
 {% if smallPictures %}
 {% set index = 0 %}
 <div class="grid">
-{% for picture in smallPictures %}
-<a href="#modal{{ index }}"><img src="{{ picture }}"></a>
-{% set index = index + 1 %}
-{% endfor %}
+    {% for picture in smallPictures %}
+    <a href="#modal{{ index }}"><img src="{{ picture }}"></a>
+    {% set index = index + 1 %}
+    {% endfor %}
 </div>
 {% endif %}
 
@@ -20,6 +20,16 @@
     <a class="modal-overlay-pict" href="#" tabindex="-1"></a>
     <div class="modal-content-pict">
         <a title="Close modal" aria-label="Close modal" href="#" class="modal-close-pict">&times; </a>
+        <div class="pagination-pict">
+        {% if not loop.first %}
+        {% set indexPrevious = index - 1 %}
+        <a class="previous" href="#modal{{ indexPrevious }}">Previous</a>
+        {% endif %}
+        {% if not loop.last %}
+        {% set indexNext = index + 1 %}
+        <a class="next" href="#modal{{ indexNext }}">Next</a>
+        {% endif %}
+        </div>
         <img src="{{ largePictures[index] }}">
         <p class="modal-caption-pict">Fetched from Flickr</p>
     </div>
