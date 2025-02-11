@@ -160,9 +160,7 @@ hr {
 }
 
 /* BREADCRUMB */
-.breadcrumb {
-  padding-left: 0.1rem;
-}
+
 .crumb,
 .crumb-last {
     display: inline;
@@ -374,11 +372,12 @@ blockquote {
   }
 
   .site-header {
-    height: 4rem;
+    min-height: 4rem;
+    max-height: 6rem;
   }
 
   .main-content {
-    min-height: calc(100dvh - 10rem);
+    min-height: calc(100dvh - 12rem);
   }
 
   .page-title {

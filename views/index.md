@@ -13,4 +13,4 @@ Thanks for stopping by!
 
 František
 
-[Log](/log) | [Blogroll](/blogroll) | [RSS](/feed.xml)
+[Log](/log) | [RSS](/feed.xml)
