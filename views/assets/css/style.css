@@ -26,6 +26,13 @@ ol[role='list'] {
   padding: 0;
 }
 
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 /* DEAFAULTS */
 
 html {
@@ -241,6 +248,93 @@ blockquote {
   transition: opacity 0.3s ease-out, visibility 0s linear 0.3s; 
 }
 
+/* MODAL PICT */
+
+.modal-pict {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modal-content-pict {
+  position: relative;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay-pict {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-pict:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content-pict img {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  border-radius: 4px;
+}
+
+.modal-close-pict {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.modal-close-pict:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.modal-caption-pict {
+  margin-top: 10px;
+  font-size: 14px;
+  color: whitesmoke;
+  font-style: italic;
+}
+
+/* GRID FOR PICTURES */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-bottom: 1rem;
+  justify-items: center;
+}
+
+.grid img {
+  border-radius: 10px;
+}
 
 /* TOOLTIP */
 

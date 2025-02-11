@@ -1,9 +1,35 @@
 {% extends "views/_layouts/base.njk" %}
 
 {% block mainContent %}
-{{ content | safe }} 
+{{ content | safe }}
+
+{% if smallPictures %}
+{% set index = 0 %}
+<div class="grid">
+{% for picture in smallPictures %}
+<a href="#modal{{ index }}"><img src="{{ picture }}"></a>
+{% set index = index + 1 %}
+{% endfor %}
+</div>
+{% endif %}
+
+{% if largePictures %}
+{% set index = 0 %}
+{% for picture in largePictures %}
+<section role="dialog" class="modal-pict" id="modal{{ index }}" aria-labelledby="modal-title">
+    <a class="modal-overlay-pict" href="#" tabindex="-1"></a>
+    <div class="modal-content-pict">
+        <a title="Close modal" aria-label="Close modal" href="#" class="modal-close-pict">&times; </a>
+        <img src="{{ largePictures[index] }}">
+        <p class="modal-caption-pict">Fetched from Flickr</p>
+    </div>
+</section>
+{% set index = index + 1 %}
+{% endfor %}
+{% endif %}
+
 <div class="center">
-~<a href="../{{ month }}/#modal"> runs in {{ page.date | dateObject("LLL") }} </a>~
+    ~<a href="../{{ month }}/#modal"> runs in {{ page.date | dateObject("LLL") }} </a>~
 </div>
 {% include "partials/pagination.njk" %}
 {% endblock %}
