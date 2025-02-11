@@ -14,5 +14,6 @@ A list of personal websites I've stumbled across on the internet and enjoy retur
 - [Living Out Loud](https://louplummer.lol/)
 - [daniel.industries](https://daniel.industries/)
 - [Naz Hamid](https://nazhamid.com/)
+- [Robin Rendle](https://robinrendle.com)
 
 
