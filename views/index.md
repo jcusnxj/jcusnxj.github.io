@@ -5,12 +5,11 @@ tags: page
 eleventyNavigation:
   key: jcusnxj
 ---
-## Hey there!
-
-Welcome to my personal website! My name's František and I was born in Czechoslovakia in 1980. I'm a father of two and a husband to one. I really enjoy personal websites. I love both visiting them and playing around with my own.  
-
-Thanks for stopping by!
-
-František
-
-[Log](/log) | [RSS](/feed.xml)
+<section class="blog-feed">
+{% set navPages = collections.post | reverse %}
+{% for item in navPages %}
+<a class="post-title" href="{{ item.url }}">{{ item.data.title }}</a>
+<p class="post-date">{{ item.data.date | dateObject("LLL, yyyy") }}</p>
+<p class="post-excerpt">{{ item.page.excerpt }}</p>
+{% endfor %}
+</section>
