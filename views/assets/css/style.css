@@ -116,18 +116,32 @@ hr {
   color: gray;
   font-size: 95%;
   font-style: italic;
+  padding-bottom: 1rem;
 }
 
 .post-title {
   font-weight: bold;
 }
 
-.post-excerpt {
-  padding: 1rem 0;
+.post-excerpt::after {
+  content: "";
+  display: block;
+  clear: both; /* Ensures content below clears the float */
 }
 
 .post-text p {
   padding-bottom: 1rem;
+}
+
+.post-picture {
+  float: left;
+  margin-right: 1rem; /* Space between image and text */
+  max-width: 100px;
+  height: auto;
+}
+
+.blog-post {
+  padding-bottom: 2rem;
 }
 
 /* TABLES */
