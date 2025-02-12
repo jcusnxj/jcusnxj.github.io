@@ -122,7 +122,11 @@ hr {
   font-weight: bold;
 }
 
-.post-date, .post-excerpt {
+.post-excerpt {
+  padding: 1rem 0;
+}
+
+.post-text p {
   padding-bottom: 1rem;
 }
 
@@ -192,6 +196,13 @@ blockquote {
 .modal-btn {
   text-align: center;
   font-size: 95%;
+  color: gray;
+}
+
+.modal-btn a {
+  color: gray;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .modal {

@@ -1,7 +1,11 @@
 {% extends "views/_layouts/base.njk" %}
 
 {% block mainContent %}
+
+<p class="post-date">{{ page.date | dateObject("LLL d, yyyy") }}</p>
+<section class="post-text">
 {{ content | safe }} 
+</section>
 {% include "partials/daily-overview.njk" %}
 {% include "partials/pagination.njk" %}
 {% endblock %}
