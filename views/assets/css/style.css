@@ -138,6 +138,7 @@ hr {
   margin-right: 1rem; /* Space between image and text */
   max-width: 100px;
   height: auto;
+  border-radius: 6px;
 }
 
 .blog-post {
