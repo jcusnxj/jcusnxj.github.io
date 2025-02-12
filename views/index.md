@@ -13,7 +13,7 @@ eleventyNavigation:
 <h2 class="post-title"><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
 <p class="post-date">{{ item.data.date | dateObject("LLL d, yyyy") }}</p>
 {% if item.data.smallPictures %}
-<a href="{{ item.url }}"><img class="post-picture" src="{{ item.data.smallPictures[0] }}"></a>
+<a href="{{ item.url }}"><img class="post-picture" src="{{ item.data.smallPictures[0] }}" alt="{{ item.data.title }}"></a>
 <p class="post-excerpt">{{ item.page.excerpt }}</p>
 {% else %}
 <p class="post-excerpt">{{ item.page.excerpt }}</p>
