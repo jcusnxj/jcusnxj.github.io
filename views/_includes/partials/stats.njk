@@ -1,0 +1,26 @@
+<div class="modal-btn">
+    <a class="" href="#modal11"> daily stats</a> |
+    <a class="" href="#modal22"> monthly stats </a>
+</div>
+
+<section role="dialog" class="modal" id="modal11" aria-labelledby="modal-title">
+    <a class="modal-overlay" href="#" tabindex="-1"></a>
+    <div class="modal-content">
+        <a title="Close modal" aria-label="Close modal" href="#" class="modal-close">&times; </a>
+        <h2 class="modal-title">{{ title }} Daily Stats</h2>
+
+        {% include "partials/daily-stats.njk" %}
+
+    </div>
+</section>
+
+<section role="dialog" class="modal" id="modal22" aria-labelledby="modal-title">
+    <a class="modal-overlay" href="#" tabindex="-1"></a>
+    <div class="modal-content">
+        <a title="Close modal" aria-label="Close modal" href="#" class="modal-close">&times; </a>
+        <h2 class="modal-title">All-time Monthly Stats</h2>
+
+        {% include "partials/monthly-stats.njk" %}
+
+    </div>
+</section>

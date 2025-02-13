@@ -1,14 +1,3 @@
-<div class="modal-btn">
-    <a class="" href="#modal11"> daily stats</a> |
-    <a class="" href="#modal22"> monthly stats </a>
-</div>
-
-<section role="dialog" class="modal" id="modal11" aria-labelledby="modal-title">
-  <a class="modal-overlay" href="#" tabindex="-1"></a>
-  <div class="modal-content">
-    <a title="Close modal" aria-label="Close modal" href="#" class="modal-close">&times; </a>
-    <h2 class="modal-title">{{ title }} Daily Stats</h2>
-
     <table class="table-overview">
       <thead>
         <tr class="header-row">
@@ -76,44 +65,4 @@
       </tbody>
     </table>
 
-  </div>
-</section>
-
-<section role="dialog" class="modal" id="modal22" aria-labelledby="modal-title">
-  <a class="modal-overlay" href="#" tabindex="-1"></a>
-  <div class="modal-content">
-    <a title="Close modal" aria-label="Close modal" href="#" class="modal-close">&times; </a>
-    <h2 class="modal-title">All-time Monthly Stats</h2>
-    <table class="table-overview">
-      <thead>
-        <tr class="header-row">
-          <th>Month</th>
-          <th>Distance</th>
-          <th class="hidden-stuff">Duration</th>
-          <th>Pace</th>
-          <th>Avg HR</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="unit-row">
-          <td class="unit-cell">mm/yy</td>
-          <td class="unit-cell">km</td>
-          <td class="unit-cell hidden-stuff">hh:mm:ss</td>
-          <td class="unit-cell">min/km</td>
-          <td class="unit-cell">bpm</td>
-        </tr>
-        {% for item in monthly | reverse %}
-        <tr class="data-row">
-          <td class="data-cell"><a href="/log/{{ item.id }}/">{{ item.month }}</a></td>
-          <td class="data-cell">{{ item.distance }}</td>
-          <td class="data-cell hidden-stuff">{{ item.duration }}</td>
-          <td class="data-cell">{{ item.pace }}</td>
-          <td class="data-cell">{{ item.avghr }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-
-
-  </div>
-</section>
+  
