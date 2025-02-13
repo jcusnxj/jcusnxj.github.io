@@ -255,5 +255,16 @@
     "location": "Chod",
     "id": "250211",
     "post": "4K Morning Run"
+  },
+  {
+    "date": "2025-02-13",
+    "distance": "4.3",
+    "duration": "00:29:59",
+    "pace": "06:56",
+    "avghr": "148",
+    "ascent": "35",
+    "cadence": "161",
+    "garmin": "https://connect.garmin.com/modern/activity/18268014431",
+    "location": "Chod"
   }
 ]

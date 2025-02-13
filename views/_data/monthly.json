@@ -28,14 +28,14 @@
   {
     "month": "Feb 25",
     "eomonth": "2025-02-28",
-    "distance": "21.7",
-    "duration": "02:28:41",
-    "pace": "06:51",
+    "distance": "26.0",
+    "duration": "02:58:40",
+    "pace": "06:52",
     "avghr": "146",
-    "ascent": "170",
-    "cadence": "159",
+    "ascent": "205",
+    "cadence": "160",
     "id": "2502",
-    "weight": "82.8",
+    "weight": "82.7",
     "bodyfat": "30.9"
   }
 ]
