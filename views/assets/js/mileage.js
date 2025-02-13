@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Convert a rem unit to pixels (assuming 1rem = 16px)
     const remToPx = parseFloat(getComputedStyle(document.documentElement).fontSize); // 1rem in px
-    const fontSizeInRem = 1; // Example: 1.5rem
+    const fontSizeInRem = 1.6; // Example: 1.5rem
     const fontSizeInPx = fontSizeInRem * remToPx; // Convert rem to pixels
 
     const ctx = canvas.getContext('2d');

@@ -66,6 +66,10 @@ h2 {
   padding: 0 1rem;
 }
 
+canvas {
+  padding: 2rem 0;
+}
+
 a {
   color:#1d9ce5;
   text-decoration: none;
