@@ -213,15 +213,10 @@ blockquote {
 /* MODAL */
 
 .modal-btn {
+  color: gray;
+  text-transform: uppercase;
+  font-size: 85%;
   text-align: center;
-  font-size: 95%;
-  color: gray;
-}
-
-.modal-btn a {
-  color: gray;
-  font-style: italic;
-  font-weight: bold;
 }
 
 .modal {
@@ -247,8 +242,9 @@ blockquote {
 }
 
 .modal-title {
-  padding-left: 24px;
+  padding: 0 0 2rem 20px;
   font-weight: 600;
+
 }
 .modal-content {
   background: #fff;
