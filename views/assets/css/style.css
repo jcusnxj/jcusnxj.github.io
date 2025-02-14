@@ -37,6 +37,7 @@ picture {
 
 html {
   font-size: 62.5%;
+  scrollbar-gutter: stable; /* reserves space for the scrollbar, preventing the layout from shifting when it appears */
 }
 
 body {
