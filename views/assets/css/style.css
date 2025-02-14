@@ -68,7 +68,8 @@ a:hover {
 
 /* SITE HEADER */
 .site-header {
- 
+ background-color: #f1dda3;
+ border-bottom: 1px solid #fff0ca;
 }
 
 .site-header .wrapper {
