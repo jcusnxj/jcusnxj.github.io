@@ -1,5 +1,5 @@
-{% set previousPost = collections[category] | getPreviousCollectionItem(page) %}
-{% set nextPost = collections[category] | getNextCollectionItem(page) %}
+{% set previousPost = collections.post | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.post | getNextCollectionItem(page) %}
 
 <section class="pagination">
   {% if previousPost %}

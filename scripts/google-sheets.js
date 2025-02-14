@@ -10,8 +10,7 @@ async function fetchAndSaveGoogleSheetsData() {
     const sheets = google.sheets('v4');
     const apiKey = process.env.GOOGLE_SHEETS_API_KEY;
     const sheetId = process.env.GOOGLE_SHEET_ID;
-    const range1 = 'log!A:K';
-    const range2 = 'monthly!A:K';
+    const range = 'monthly!A:K';
 
     if (!apiKey || !sheetId) {
         throw new Error('Missing required environment variables.');
@@ -42,56 +41,35 @@ async function fetchAndSaveGoogleSheetsData() {
         }
     }
 
-    const [sheet1, sheet2] = await Promise.all([
-        fetchSheetData(range1),
-        fetchSheetData(range2),
-    ]);
+    const sheet = await fetchSheetData(range);
 
-    const workout = sheet1.dataRows.map((row) => ({
-        date: row[sheet1.headers.indexOf('date')],
-        distance: row[sheet1.headers.indexOf('distance')],
-        duration: row[sheet1.headers.indexOf('duration')],
-        pace: row[sheet1.headers.indexOf('pace')],
-        avghr: row[sheet1.headers.indexOf('avghr')],
-        ascent: row[sheet1.headers.indexOf('ascent')],
-        cadence: row[sheet1.headers.indexOf('cadence')],
-        garmin: row[sheet1.headers.indexOf('garmin')],
-        location: row[sheet1.headers.indexOf('location')],
-        id: row[sheet1.headers.indexOf('id')],
-        post: row[sheet1.headers.indexOf('post')],
+    const monthly = sheet.dataRows.map((row) => ({
+        month: row[sheet.headers.indexOf('month')],
+        eomonth: row[sheet.headers.indexOf('eomonth')],
+        distance: row[sheet.headers.indexOf('distance')],
+        duration: row[sheet.headers.indexOf('duration')],
+        pace: row[sheet.headers.indexOf('pace')],
+        avghr: row[sheet.headers.indexOf('avghr')],
+        ascent: row[sheet.headers.indexOf('ascent')],
+        cadence: row[sheet.headers.indexOf('cadence')],
+        id: row[sheet.headers.indexOf('id')],
+        weight: row[sheet.headers.indexOf('weight')],
+        bodyfat: row[sheet.headers.indexOf('bodyfat')],
     }));
 
-    const monthly = sheet2.dataRows.map((row) => ({
-        month: row[sheet2.headers.indexOf('month')],
-        eomonth: row[sheet2.headers.indexOf('eomonth')],
-        distance: row[sheet2.headers.indexOf('distance')],
-        duration: row[sheet2.headers.indexOf('duration')],
-        pace: row[sheet2.headers.indexOf('pace')],
-        avghr: row[sheet2.headers.indexOf('avghr')],
-        ascent: row[sheet2.headers.indexOf('ascent')],
-        cadence: row[sheet2.headers.indexOf('cadence')],
-        id: row[sheet2.headers.indexOf('id')],
-        weight: row[sheet2.headers.indexOf('weight')],
-        bodyfat: row[sheet2.headers.indexOf('bodyfat')],
-    }));
-
-    // Define paths for output files
+    // Define path for output file
     const dataDir = path.resolve('views/_data');
-    const workoutFile = path.join(dataDir, 'workout.json');
     const monthlyFile = path.join(dataDir, 'monthly.json');
 
     try {
         // Ensure the _data directory exists
         await fs.mkdir(dataDir, { recursive: true });
 
-        // Save data to JSON files
-        await fs.writeFile(workoutFile, JSON.stringify(workout, null, 2), 'utf-8');
-        console.log(`Workout data saved to ${workoutFile}`);
-
+        // Save data to JSON file
         await fs.writeFile(monthlyFile, JSON.stringify(monthly, null, 2), 'utf-8');
         console.log(`Monthly data saved to ${monthlyFile}`);
     } catch (error) {
-        console.error('Error writing data to files:', error);
+        console.error('Error writing data to file:', error);
     }
 }
 

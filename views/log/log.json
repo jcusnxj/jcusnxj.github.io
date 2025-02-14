@@ -1,6 +1,5 @@
 {
     "layout": "post",
-    "tags": ["running","post"],
-    "permalink": "/log/{{ page.fileSlug }}/",
-    "category": "running"
+    "tags": ["post"],
+    "permalink": "/log/{{ page.fileSlug }}/"
 }
