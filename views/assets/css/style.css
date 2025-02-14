@@ -46,28 +46,10 @@ body {
     background-color:#fdf6e3;
 }
 
-h1, h2, h3 {
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight:500;
-}
-
-h2 {
-  font-size: 1.75rem;
-  font-weight: 500;
-}
-
 .page-container {
   max-width: 768px;
   margin: 0 auto;
   padding: 0 1rem;
-}
-
-canvas {
-  padding: 2rem 0;
 }
 
 a {
@@ -99,13 +81,13 @@ a:hover {
   color: gray;
   text-transform: uppercase;
   font-size: 90%;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .site-title a {
   font-size: 3rem;
   color: black;
-  font-weight: 500;
+  font-weight: 550;
 }
 
 /* MAIN CONTENT */
