@@ -1,6 +1,9 @@
 {% extends "views/_layouts/base.njk" %}
 
 {% block mainContent %}
+
+<article class="post-full">
+<div class="post-title">{{ title }}</div>
 <p class="post-date">{{ page.date | dateObject("LLL d, yyyy") }}</p>
 
 <section class="post-text">
@@ -35,4 +38,5 @@
 
 
 {% include "partials/pagination.njk" %}
+</article>
 {% endblock %}

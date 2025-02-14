@@ -1,5 +1,5 @@
 {
-    "layout": "report",
+    "layout": "post",
     "tags": ["running","post"],
     "permalink": "/log/{{ page.fileSlug }}/",
     "category": "running"

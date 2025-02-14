@@ -81,22 +81,36 @@ a:hover {
 
 /* SITE HEADER */
 .site-header {
-  height: 15rem;
+  height: 12rem;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-bottom: 1rem;
+  justify-content:space-between;
+  align-items: center;
 }
 
-hr {
-  border: 0px;
-  height: 1px;
-  background-color: lightgray;
+.nav-header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  color:gray;
+}
+
+.nav-header a {
+  color: gray;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 500;
+}
+
+.site-title a {
+  font-size: 3rem;
+  color: black;
+  font-weight: 500;
 }
 
 /* MAIN CONTENT */
 .main-content {
-  min-height: calc(100dvh - 22rem);
+  min-height: calc(100dvh - 18rem);
 }
 
 /* FOOTER */
@@ -114,7 +128,12 @@ hr {
   font-size: smaller;
 }
 
-/* BLOG FEED & BLOG POSTs */
+/* BLOG FEED & BLOG POST */
+
+.post-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
 
 .post-date {
   color: gray;
@@ -123,9 +142,7 @@ hr {
   padding-bottom: 1rem;
 }
 
-.post-title {
-  font-weight: bold;
-}
+
 
 .post-excerpt::after {
   content: "";
@@ -399,11 +416,11 @@ blockquote {
   }
 
   .site-header {
-    height: 9rem;
+    height: 8rem;
   }
 
   .main-content {
-    min-height: calc(100dvh - 16rem);
+    min-height: calc(100dvh - 14rem);
   }
 
   .modal-content {
