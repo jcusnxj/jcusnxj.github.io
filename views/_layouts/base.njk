@@ -19,31 +19,32 @@
 
 <body>
 
-    <!-- PAGE LAYOUT -->
-    <div class="page-container">
-
         <!-- HEADER -->
         <header class="site-header">
-            <div class="site-title"><a href="/">jcusnxj</a></div>
-            <div class="nav-header">
-            <a href="/">Home</a> |
-            <a href="/log">Log</a>
+            <div class="wrapper">
+                <div class="site-title"><a href="/">jcusnxj</a></div>
+                <div class="nav-header">
+                    <a href="/">Home</a> 
+                    <a href="/log">Log</a>
+                </div>
             </div>
         </header>
 
         <!-- MAIN CONTENT -->
         <main class="main-content">
-            {% block mainContent %}
-            {{ content | safe }}
-            {% endblock %}
+            <div class="wrapper">
+                {% block mainContent %}
+                {{ content | safe }}
+                {% endblock %}
+            </div>
         </main>
 
-        <!-- FOOTER -->
-        <footer class="site-footer">
+    <!-- FOOTER -->
+    <footer class="site-footer">
             {% include "partials/footer.njk" %}
-        </footer>
+    </footer>
 
-    </div>
+
 
 </body>
 
