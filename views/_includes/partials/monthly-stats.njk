@@ -18,7 +18,11 @@
     </tr>
     {% for item in monthly | reverse %}
     <tr class="data-row">
+      {% if item.id %}
       <td class="data-cell"><a href="/log/{{ item.id }}/">{{ item.month }}</a></td>
+      {% else %}
+      <td class="data-cell">{{ item.month }}</td>
+      {% endif %}
       <td class="data-cell">{{ item.distance }}</td>
       <td class="data-cell hidden-stuff">{{ item.duration }}</td>
       <td class="data-cell">{{ item.pace }}</td>
