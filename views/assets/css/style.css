@@ -7,6 +7,7 @@
   --text-color: #0a1128;
   --link-color: #0a1128;
   --text-header-color: #faf0ca;
+  --text-other-color: #676767;
 }
 
 /* Box sizing */
@@ -100,7 +101,7 @@ a:hover {
 }
 
 .nav-header a {
-  font-weight: 400;
+  font-weight: 500;
   color: var(--text-header-color);
   font-size: 1.7rem;
 }
@@ -123,7 +124,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: gray;
+  color: var(--text-other-color);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
@@ -140,7 +141,7 @@ a:hover {
 }
 
 .post-date {
-  color: gray;
+  color: var(--text-other-color);
   font-size: 95%;
   font-style: italic;
   padding-bottom: 1rem;
@@ -177,7 +178,7 @@ a:hover {
   border-collapse: collapse;
   margin: 0 auto;
   font-size: 95%;
-  color: gray;
+  color: var(--text-other-color);
   /* #808080 */
 }
 
@@ -201,7 +202,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   font-size: 95%;
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 
 .pagination a {
@@ -214,7 +215,7 @@ a:hover {
 blockquote {
   padding: 0.5rem 1rem;
   border-left: 3px solid orange;
-  background-color: #F0EAD6;
+  background-color: #f7e8b2;
   margin-bottom: 1rem;
 }
 
@@ -317,6 +318,11 @@ blockquote {
 
   .main-content {
     min-height: calc(100dvh - 13rem);
+    padding-top: 2rem;
+  }
+
+  .pagination {
+    margin-top: 2rem;
   }
 
 }
