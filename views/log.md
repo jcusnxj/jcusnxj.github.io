@@ -1,5 +1,5 @@
 ---
-title: Running log
+title: Running Log
 layout: base
 tags: page
 eleventyNavigation:
