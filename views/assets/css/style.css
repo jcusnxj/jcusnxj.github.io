@@ -136,14 +136,10 @@ a:hover {
   color: var(--text-header-color);
 }
 
-.copyright {
-  font-size: smaller;
-}
-
 /* BLOG FEED & BLOG POST */
 
 .post-title {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 400;
 }
 
