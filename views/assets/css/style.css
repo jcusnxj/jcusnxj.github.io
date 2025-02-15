@@ -83,6 +83,7 @@ a:hover {
 /* SITE HEADER */
 .site-header {
   background-color: var(--header-color);
+  border-bottom: 2px solid orange;
 }
 
 .site-header .wrapper {
@@ -125,8 +126,14 @@ a:hover {
   align-items: center;
   justify-content: center;
   color: var(--text-other-color);
+  background-color: var(--header-color);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  border-top: 2px solid orange;
+}
+
+.site-footer a {
+  color: var(--text-header-color);
 }
 
 .copyright {
@@ -202,7 +209,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   font-size: 95%;
-  margin-top: 4rem;
+  margin: 4rem 0;
 }
 
 .pagination a {
@@ -290,8 +297,12 @@ blockquote {
 .modal-caption-pict {
   margin-top: 10px;
   font-size: 14px;
-  color: whitesmoke;
+  color: var(--text-header-color);
   font-style: italic;
+}
+
+.modal-caption-pict a {
+  color: var(--text-header-color);
 }
 
 /* GRID FOR PICTURES */
@@ -322,7 +333,7 @@ blockquote {
   }
 
   .pagination {
-    margin-top: 2rem;
+    margin: 2rem 0;
   }
 
 }
