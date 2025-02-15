@@ -2,10 +2,10 @@
 
 /* VARIABLES */
 :root {
-  --header-color: #0a1128;
+  --header-color: #0b132b;
   --body-color: #faf0ca;
-  --text-color: #0a1128;
-  --link-color: #0a1128;
+  --text-color: #0b132b;
+  --link-color: #0b132b;
   --text-header-color: #faf0ca;
   --text-other-color: #676767;
 }
@@ -164,7 +164,7 @@ a:hover {
   /* Space between image and text */
   max-width: 100px;
   height: auto;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .blog-post {
@@ -240,7 +240,7 @@ blockquote {
 
 .modal-content-pict {
   position: relative;
-  border-radius: 8px;
+  border-radius: 4px;
   max-width: 90%;
   max-height: 90%;
   overflow: hidden;
@@ -279,7 +279,7 @@ blockquote {
   text-decoration: none;
   background: #00000099;
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 4px;
   transition: background 0.2s;
 }
 
@@ -306,7 +306,7 @@ blockquote {
 }
 
 .grid img {
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 
