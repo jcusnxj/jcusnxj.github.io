@@ -14,6 +14,6 @@ Welcome to my personal website! My name's František, and I was born in Czechosl
 
 __Colophon__
 
-The website is generated with 11ty and deployed to GitHub Pages. It’s built with only HTML and CSS, as that’s the only thing I have a basic understanding of.
+The website is generated with 11ty and deployed to GitHub Pages. It’s built with only HTML and CSS, as that’s the only thing I have a basic understanding of. No tracking, no analytics, no data collection — just a simple website.   
 
 </div>
