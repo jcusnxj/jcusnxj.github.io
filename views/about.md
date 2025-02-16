@@ -8,7 +8,9 @@ eleventyNavigation:
 ---
 <div class="post-text">
 
-Welcome to my personal website! My name's František, and I was born in Czechoslovakia in 1980. I'm a father of two and a husband to one. I have no specific plans for this website besides playing around with it, so let's see where it evolves over time. It may grow, stagnate, or simply disappear again — all without even being noticed. In fact, I like that idea. To a certain extent, it gives me the freedom to share without overthinking.
+Welcome to my personal website! My name's František, and I was born in Czechoslovakia in 1980. I'm a father of two and a husband to one. 
+
+I have no specific plans for this website besides playing around with it, so let's see where it evolves over time. It may grow, stagnate, or simply disappear again — all without even being noticed. In fact, I like that idea. To a certain extent, it gives me the freedom to share without overthinking.
 
 __Colophon__
 
