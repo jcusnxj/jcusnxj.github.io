@@ -50,7 +50,7 @@ html {
 }
 
 body {
-  font-size: 1.65rem;
+  font-size: 1.7rem;
   line-height: 1.5;
   font-family: 'Bitter', 'Roboto Mono', 'Open Sans', sans-serif;
   background-color: var(--body-color);
@@ -76,6 +76,10 @@ a {
 
 a:hover {
   font-weight: 600;
+}
+
+.line {
+  line-height: 1.2;
 }
 
 
@@ -139,13 +143,13 @@ a:hover {
 /* BLOG FEED & BLOG POST */
 
 .post-title {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
 .post-date {
   color: var(--text-other-color);
-  font-size: 95%;
+  font-size: 90%;
   font-style: italic;
   padding-bottom: 1rem;
 }
