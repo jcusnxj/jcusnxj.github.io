@@ -3,9 +3,9 @@
     <tr class="header-row">
       <th>Month</th>
       <th>Distance</th>
-      <th class="hidden-stuff">Ascent</th>
       <th>Pace</th>
       <th>Avg HR</th>
+      <th class="hidden-stuff">Ascent</th>
       <th class="hidden-stuff">Duration</th>
     </tr>
   </thead>
@@ -13,9 +13,9 @@
     <tr class="unit-row">
       <td class="unit-cell">mm/yy</td>
       <td class="unit-cell">km</td>
-      <td class="unit-cell hidden-stuff">m</td>
       <td class="unit-cell">min/km</td>
       <td class="unit-cell">bpm</td>
+      <td class="unit-cell hidden-stuff">m</td>
       <td class="unit-cell hidden-stuff">hh:mm:ss</td>
     </tr>
     {% for item in monthly | reverse %}
@@ -26,9 +26,9 @@
       <td class="data-cell">{{ item.month }}</td>
       {% endif %}
       <td class="data-cell">{{ item.distance }}</td>
-      <td class="data-cell hidden-stuff">{{ item.ascent }}</td>
       <td class="data-cell">{{ item.pace }}</td>
       <td class="data-cell">{{ item.avghr }}</td>
+      <td class="data-cell hidden-stuff">{{ item.ascent }}</td>
       <td class="data-cell hidden-stuff">{{ item.duration }}</td>
     </tr>
     {% endfor %}
