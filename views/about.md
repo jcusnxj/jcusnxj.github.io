@@ -1,6 +1,7 @@
 ---
 title: About
 layout: base
+date: 2025-02-16
 tags: page
 eleventyNavigation:
   key: About
@@ -8,7 +9,11 @@ eleventyNavigation:
 ---
 <div class="post-text">
 
+__Who am I?__
+
 Welcome to my personal website! My name's František, and I was born in Czechoslovakia in 1980. I'm a father of two and a husband to one. 
+
+__What is this place about?__
 
 I have no specific plans for this website besides playing around with it, so let's see where it evolves over time. It may grow, stagnate, or simply disappear again — all without even being noticed. In fact, I like that idea. To a certain extent, it gives me the freedom to share without overthinking.
 
