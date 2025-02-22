@@ -1,0 +1,18 @@
+/* VARIABLES */
+:root {
+    --body-color: #0b132b;
+    --text-color: #faf0ca;
+    --link-color: #10cade;
+  }
+
+html {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
