@@ -1,7 +1,22 @@
 ---
 layout: base
 ---
-# Welcome to my personal website!
+<section class="blog-feed">
+{% set navPages = collections.post | reverse %}
 
-This is an example of link to [Homepage](/). Just wanted to see how the link color would look like.
+{% for item in navPages %}
+<article class="blog-post">
+<h2 class="post-title line"><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
+<p class="post-date">{{ item.data.date | dateObject("LLL d, yyyy") }}</p>
+{% if item.data.smallPictures %}
+<a href="{{ item.url }}"><img class="post-picture" src="{{ item.data.smallPictures[0] }}" alt="{{ item.data.title }}"></a>
+<p class="post-excerpt">{{ item.page.excerpt }}</p>
+{% else %}
+<p class="post-excerpt">{{ item.page.excerpt }}</p>
+{% endif %}
+</article>
+{% endfor %}
+</section>
+
+
 

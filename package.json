@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-     "build": "eleventy"
+    "build": "eleventy"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,7 @@
   "description": "",
   "type": "module",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "luxon": "^3.5.0"
   }
 }
